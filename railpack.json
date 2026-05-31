@@ -4,14 +4,6 @@
   "packages": {
     "python": "3.11"
   },
-  "steps": {
-    "install": {
-      "commands": [
-        "python -m pip install --upgrade pip setuptools wheel",
-        "pip install --no-build-isolation -r requirements.txt"
-      ]
-    }
-  },
   "deploy": {
     "startCommand": "uvicorn server:app --host 0.0.0.0 --port $PORT --timeout-keep-alive 620"
   }
